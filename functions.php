@@ -5,6 +5,13 @@ function alpha2_child_assets(){
 }
 add_action("wp_enqueue_scripts","alpha2_child_assets");
 
+function alpha2_child_assets_dequeue(){
+    wp_dequeue_style( "alpha2-style" );
+    wp_deregister_style( "alpha2-style" );
+    wp_enqueue_style("alpha2-style", get_theme_file_uri("/assets/css/alpha2.css"));
+}
+add_action("wp_enqueue_scripts","alpha2_child_assets_dequeue",11);
+
 function alpha_about_page_template_banner(){
     if(is_page()){
         $alpha_feat_image = get_the_post_thumbnail_url(null, "large");
