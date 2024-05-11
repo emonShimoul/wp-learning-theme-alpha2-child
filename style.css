@@ -1,7 +1,7 @@
 /*
 Theme Name: Alpha2 Child
 Template: alpha2
-Theme URI: #
+Theme URI: 
 Author: Emon Shimoul
 Autor URI: https://emonshimoul.netlify.app/
 Description: My First HyperMinimal Theme
@@ -11,3 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, education
 Text Domain: alpha2-child
 */
+
+h1.heading a{
+    text-transform: uppercase;
+}
